@@ -1,0 +1,51 @@
+{
+  "name": "marmot-cli",
+  "version": "1.0.0",
+  "description": "command-line interface for Marmot",
+  "keywords": [
+    "marmot",
+    "macaca",
+    "cd",
+    "ci",
+    "cli"
+  ],
+  "bin": {
+    "marmot": "./bin/marmot-cli.js"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/macacajs/marmot-cli.git"
+  },
+  "dependencies": {
+    "commander": "^2.15.1",
+    "globby": "^8.0.1",
+    "gradle-to-js": "^1.1.0",
+    "ios-utils": "^1.0.7",
+    "last-commit-log": "^1.0.4-0",
+    "urllib": "^2.28.1",
+    "xutil": "^1.0.11"
+  },
+  "devDependencies": {
+    "co-mocha": "*",
+    "eslint": "*",
+    "eslint-plugin-mocha": "^4.11.0",
+    "git-contributor": "*",
+    "mocha": "*",
+    "nyc": "*",
+    "pre-commit": "*"
+  },
+  "scripts": {
+    "ci": "npm run lint && npm run test",
+    "test": "nyc --reporter=lcov --reporter=text mocha",
+    "lint": "eslint . --fix",
+    "contributor": "git-contributor"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "license": "MIT"
+}
