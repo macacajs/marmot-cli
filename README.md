@@ -27,17 +27,42 @@ $ npm i marmot-cli -g
 
 ## Usage
 
-coming soon
+### report
+
+```bash
+$ marmot report -c ./marmot.config.js
+```
 
 ## Configuration
 
-coming soon
+```
+module.exports = {
+  files: [
+    `build/Release-iphonesimulator/${pkg.name}.app`
+  ],
+  packages: [
+    {
+      version,
+      path: `${pkg.name}.app`,
+    }
+  ],
+  testInfo: {
+  },
+  extraInfo: {
+  }
+};
+```
 
-## Environment
+### Integration Samples
 
-coming soon
+- [ios-app-bootstrap](//github.com/app-bootstrap/ios-app-bootstrap)
+- [android-app-bootstrap](//github.com/app-bootstrap/android-app-bootstrap)
 
-## Examples
+## Environment Variable
+
+| name              | description                  |
+| ----------------- | ---------------------------- |
+| MARMOT_SERVER_URL | server url for Marmot server |
 
 ## License
 
