@@ -53,6 +53,16 @@ module.exports = {
 };
 ```
 
+User helper methods to resolve the iOS and Android platforms.
+
+```javascript
+const helper = require('marmot-cli/lib/helper');
+const {
+  iosUtils,
+  androidUtils
+} = helper;
+```
+
 ### Integration Samples
 
 - [ios-app-bootstrap](//github.com/app-bootstrap/ios-app-bootstrap)
