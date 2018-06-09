@@ -30,7 +30,7 @@
     "co-mocha": "*",
     "eslint": "*",
     "eslint-plugin-mocha": "^4.11.0",
-    "git-contributor": "*",
+    "git-contributor": "^1.0.8",
     "mocha": "*",
     "nyc": "*",
     "pre-commit": "*"
