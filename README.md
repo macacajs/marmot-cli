@@ -59,8 +59,33 @@ User helper methods to resolve the iOS and Android platforms.
 const helper = require('marmot-cli/lib/helper');
 const {
   iosUtils,
-  androidUtils
+  androidUtils,
+  webUtils,
 } = helper;
+
+// frequently methods
+
+iosUtils
+
+androidUtils.parseGradle
+
+webUtils.summarizedCoverage
+
+helper.getDepsPkgVersion
+
+helper.isExistedFile
+
+helper.isExistedDir
+
+helper.moment
+
+helper.mkdir
+
+helper.rimraf
+
+helper.shelljs
+
+helper.detectPort
 ```
 
 ### Integration Samples
