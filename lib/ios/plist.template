@@ -11,19 +11,19 @@
             <key>kind</key>
             <string>software-package</string>
             <key>url</key>
-            <string><#=url#></string>
+            <string><#= url #></string>
           </dict>
         </array>
         <key>metadata</key>
         <dict>
           <key>bundle-identifier</key>
-          <string><#=bundleIdentifier#></string>
+          <string><#= bundleIdentifier #></string>
           <key>bundle-version</key>
-          <string><#=bundleVersion#></string>
+          <string><#= bundleVersion #></string>
           <key>kind</key>
           <string>software</string>
           <key>title</key>
-          <string><#=title#></string>
+          <string><#= title #></string>
         </dict>
       </dict>
     </array>

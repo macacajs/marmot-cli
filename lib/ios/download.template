@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <a href="itms-services://?action=download-manifest&url=<#url#>">
-      <h1><#url#></h1>
+    <a href="itms-services://?action=download-manifest&url=<#= url #>">
+      <h1><#= url #></h1>
     </a>
   </body>
 </html>
