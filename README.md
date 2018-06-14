@@ -56,7 +56,7 @@ module.exports = {
 User helper methods to resolve the iOS and Android platforms.
 
 ```javascript
-const helper = require('marmot-cli');
+const helper = require('marmot-cli').helper;
 const {
   iosUtils,
   androidUtils,
