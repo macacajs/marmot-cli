@@ -138,7 +138,6 @@
     "no-warning-comments": 0,
     "no-with": 2,
     "no-extra-parens": 0,
-    "object-curly-spacing": 0,
     "one-var": [2, { "initialized": "never" }],
     "operator-assignment": 0,
     "operator-linebreak": [2, "after"],
@@ -163,6 +162,13 @@
     "vars-on-top": 0,
     "wrap-iife": [2, "any"],
     "wrap-regex": 0,
-    "yoda": [2, "never"]
+    "yoda": [2, "never"],
+    "object-curly-spacing": [
+      "error",
+      "always",
+      {
+        "objectsInObjects": false
+      }
+    ]
   }
 }
