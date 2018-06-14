@@ -35,7 +35,7 @@ $ marmot report -c ./marmot.config.js
 
 ## Configuration
 
-```
+```javascript
 module.exports = {
   files: [
     `build/Release-iphonesimulator/${pkg.name}.app`
@@ -94,6 +94,12 @@ helper.detectPort
 - [android-app-bootstrap](//github.com/app-bootstrap/android-app-bootstrap)
 - [awesome-practice-projects](//github.com/app-bootstrap/awesome-practice-projects)
 - [web-app-bootstrap](//github.com/app-bootstrap/web-app-bootstrap)
+
+Example for ios-app-bootstrap:
+
+```bash
+$ MARMOT_SERVER_URL=http://127.0.0.1:9900 ci.sh
+```
 
 ## Environment Variable
 
