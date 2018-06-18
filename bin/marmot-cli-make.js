@@ -14,7 +14,7 @@ if (platformType === 'ios') {
   console.log(process.argv);
 
   // args should be; [0]node, [1]js-file, [2]make-action....[3]configuration args
-  if (process.argv.count <= 3) {
+  if (process.argv.length < 3) {
     console.error('invalid arguments');
     process.exit(0);
   }
@@ -27,9 +27,14 @@ if (platformType === 'ios') {
   }
 
   cmd = process.argv[2];
-  args = `ARGS="--${process.argv.slice(3).join(' --')}"`;
-  console.log(`make ${cmd} ${args}`);
+  args.push(cmd);
 
+  // formalize extra args
+  if (process.argv.length > 3) {
+    args.push(`ARGS="--${process.argv.slice(3).join(' --')}"`);
+  }
+
+  console.log(`make ${args}`);
 } else if (platformType === 'android') {
 
 } else {
@@ -37,7 +42,7 @@ if (platformType === 'ios') {
 }
 
 // execute cmd
-const build_process = child_process.spawn('make', [cmd, args], {
+const build_process = child_process.spawn('make', args, {
   stdio: [
     process.stdin,
     process.stdout,
