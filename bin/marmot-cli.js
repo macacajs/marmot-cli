@@ -32,6 +32,7 @@ program
       '  Commands:',
       '',
       '    report          report to Marmot server',
+      '    make            based on current platform macro, execute make command',
       '',
       '  Options:',
       '',
