@@ -13,7 +13,7 @@ if (platformType === 'ios') {
   console.log('executing make process for ios');
   console.log(process.argv);
 
-  // args should be; [0]node, [1]js0file, [2]make-action....[3]configuration args
+  // args should be; [0]node, [1]js-file, [2]make-action....[3]configuration args
   if (process.argv.count <= 3) {
     console.error('invalid arguments');
     process.exit(0);
