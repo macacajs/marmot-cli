@@ -13,7 +13,7 @@ const {
 const program = require('commander');
 
 const pkg = require('../package');
-
+const buildCmds = ['build', 'release', 'pack', 'lint', 'doc', 'coverage', 'setup', 'test'];
 const chalk = _.chalk;
 
 program
@@ -32,6 +32,49 @@ program
       '  Commands:',
       '',
       '    report          report to Marmot server',
+      '      <iOS> args:',
+      '      <Android> args:',
+      '      <Web> args:',
+      '',
+      '    build           execute build command',
+      '      <iOS> args:',
+      '      <Android> args:',
+      '      <Web> args:',
+      '',
+      '    coverage        execute test cases and then gather coverage data',
+      '      <iOS> args:',
+      '      <Android> args:',
+      '      <Web> args:',
+      '',
+      '    doc             auto generate documents',
+      '      <iOS> args:',
+      '      <Android> args:',
+      '      <Web> args:',
+      '',
+      '    lint            scan and generate lint reports',
+      '      <iOS> args:',
+      '      <Android> args:',
+      '      <Web> args:',
+      '',
+      '    pack            pack files and form a deliverable package',
+      '      <iOS> args:',
+      '      <Android> args:',
+      '      <Web> args:',
+      '',
+      '    release         release current module (exclue Android & iOS app)',
+      '      <iOS> args:',
+      '      <Android> args:',
+      '      <Web> args:',
+      '',
+      '    setup           based on current platform macro, execute make command',
+      '      <iOS> args:',
+      '      <Android> args:',
+      '      <Web> args:',
+      '',
+      '    test            execute test cases',
+      '      <iOS> args:',
+      '      <Android> args:',
+      '      <Web> args:',
       '',
       '  Options:',
       '',
@@ -52,10 +95,16 @@ if (program.versions) {
   process.exit(0);
 }
 
-const cmd = program.args[0];
+let cmd = program.args[0];
 
 if (!cmd) {
   return program.help();
+}
+
+// for cmd which belongs to development process, all navigate to marmot-cli-make.js
+if (buildCmds.includes(cmd)) {
+  program.rawArgs.splice(3, 0, cmd);
+  cmd = 'make';
 }
 
 const file = path.join(__dirname, `${pkg.name}-${cmd}.js`);
