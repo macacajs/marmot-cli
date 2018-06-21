@@ -3,12 +3,12 @@
 'use strict';
 
 const {
-  EOL
+  EOL,
 } = require('os');
 const _ = require('xutil');
 const path = require('path');
 const {
-  spawn
+  spawn,
 } = require('child_process');
 const program = require('commander');
 
@@ -20,7 +20,7 @@ program
   .option('-v, --versions', 'show version and exit')
   .option('--verbose', 'show more debugging information')
   .usage('<command> [options] [arguments]')
-  .helpInformation = function() {
+  .helpInformation = function () {
     return [
       '',
       '  ' + chalk.white(pkg.description),
@@ -84,7 +84,7 @@ program
       '',
       '  ' + chalk.underline.white(pkg.homepage),
       '',
-      ''
+      '',
     ].join(EOL);
   };
 
@@ -123,8 +123,8 @@ const bootstrap = spawn('node', args, {
     process.stdin,
     process.stdout,
     2,
-    'ipc'
-  ]
+    'ipc',
+  ],
 });
 
 bootstrap.on('close', code => {
@@ -137,10 +137,10 @@ bootstrap.on('exit', code => {
 
 bootstrap.on('message', e => {
   switch (e.signal) {
-  case 'kill':
-    bootstrap.kill();
-    break;
-  default :
-    break;
+    case 'kill':
+      bootstrap.kill();
+      break;
+    default :
+      break;
   }
 });
