@@ -1,6 +1,6 @@
 {
   "name": "marmot-cli",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "command-line interface for Marmot",
   "keywords": [
     "marmot",
