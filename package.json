@@ -29,16 +29,21 @@
     "xutil": "^1.0.11"
   },
   "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "eslint": "^4.19.1",
     "eslint-config-antife": "^1.0.2",
     "git-contributor": "^1.0.8",
+    "intelli-espower-loader": "^1.0.1",
     "mocha": "^5.2.0",
     "nyc": "^12.0.2",
-    "pre-commit": "^1.2.2"
+    "power-assert": "^1.6.0",
+    "pre-commit": "^1.2.2",
+    "sinon": "^6.0.0"
   },
   "scripts": {
     "ci": "npm run lint && npm run test",
     "test": "nyc --reporter=lcov --reporter=text mocha",
+    "test-debug": "nyc --reporter=lcov --reporter=text mocha; open coverage/lcov-report/index.html",
     "lint": "eslint . --fix",
     "contributor": "git-contributor"
   },
