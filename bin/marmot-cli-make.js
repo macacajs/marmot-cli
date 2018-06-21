@@ -4,10 +4,10 @@
 
 const _ = require('../lib/helper');
 const platformType = _.getPlatformType();
-const child_process = require('child_process');
+const childProcess = require('child_process');
 
 let cmd = '';
-let args = [];
+const args = [];
 
 if (platformType === 'ios') {
   console.log('executing make process for ios');
@@ -42,25 +42,25 @@ if (platformType === 'ios') {
 }
 
 // execute cmd
-const build_process = child_process.spawn('make', args, {
+const buildProcess = childProcess.spawn('make', args, {
   stdio: [
     process.stdin,
     process.stdout,
     2,
-    'ipc'
-  ]
+    'ipc',
+  ],
 });
 
-build_process.on('close', code => {
+buildProcess.on('close', code => {
   process.exit('process exited with code ' + code);
 });
 
-build_process.on('exit', code => {
+buildProcess.on('exit', code => {
   process.exit(code);
 });
 
-build_process.on('message', e => {
+buildProcess.on('message', e => {
   if (e.signal === 'kill') {
-    build_process.kill();
+    buildProcess.kill();
   }
 });

@@ -29,13 +29,12 @@
     "xutil": "^1.0.11"
   },
   "devDependencies": {
-    "co-mocha": "*",
-    "eslint": "*",
-    "eslint-plugin-mocha": "^4.11.0",
+    "eslint": "^4.19.1",
+    "eslint-config-antife": "^1.0.2",
     "git-contributor": "^1.0.8",
-    "mocha": "*",
-    "nyc": "*",
-    "pre-commit": "*"
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "pre-commit": "^1.2.2"
   },
   "scripts": {
     "ci": "npm run lint && npm run test",
