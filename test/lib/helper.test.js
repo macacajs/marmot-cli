@@ -81,4 +81,9 @@ describe('lib/helper', () => {
     assert(helper.getDepsPkgVersion('last-commit-log').match(/^1\.\d\.\d$/));
     assert(helper.getDepsPkgVersion('no-deps-last-commit-log') === undefined);
   });
+
+  it('should normalize jobName', () => {
+    assert(helper.normalizeJobName('group/project') === 'group_project');
+    assert(helper.normalizeJobName('project') === 'project');
+  });
 });
