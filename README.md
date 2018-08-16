@@ -111,11 +111,11 @@ $ MARMOT_SERVER_URL=http://127.0.0.1:9900 ci.sh
 
 ## Contributors
 
-|[<img src="https://avatars1.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>|[<img src="https://avatars1.githubusercontent.com/u/2139038?v=4" width="100px;"/><br/><sub><b>zhangyuheng</b></sub>](https://github.com/zhangyuheng)<br/>|[<img src="https://avatars2.githubusercontent.com/u/4408102?v=4" width="100px;"/><br/><sub><b>YvonneZhang</b></sub>](https://github.com/YvonneZhang)<br/>|[<img src="https://avatars0.githubusercontent.com/u/8198256?v=4" width="100px;"/><br/><sub><b>SamuelZhaoY</b></sub>](https://github.com/SamuelZhaoY)<br/>
-| :---: | :---: | :---: | :---: |
+|[<img src="https://avatars1.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>|[<img src="https://avatars1.githubusercontent.com/u/2139038?v=4" width="100px;"/><br/><sub><b>zhangyuheng</b></sub>](https://github.com/zhangyuheng)<br/>|[<img src="https://avatars2.githubusercontent.com/u/4408102?v=4" width="100px;"/><br/><sub><b>YvonneZhang</b></sub>](https://github.com/YvonneZhang)<br/>|[<img src="https://avatars0.githubusercontent.com/u/8198256?v=4" width="100px;"/><br/><sub><b>SamuelZhaoY</b></sub>](https://github.com/SamuelZhaoY)<br/>|[<img src="https://avatars3.githubusercontent.com/u/1818483?v=4" width="100px;"/><br/><sub><b>ltianqi</b></sub>](https://github.com/ltianqi)<br/>
+| :---: | :---: | :---: | :---: | :---: |
 
 
-This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto upated at `Tue Jun 19 2018 16:57:33 GMT+0700`.
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto upated at `Thu Aug 16 2018 21:59:35 GMT+0800`.
 
 <!-- GITCONTRIBUTOR_END -->
 
