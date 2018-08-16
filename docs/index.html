@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="-_.getDepsPkgVersion.html">getDepsPkgVersion</a></span></li>
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+    <section class="readme">
+        <article><h1>marmot-cli</h1><p><a href="https://npmjs.org/package/marmot-cli"><img src="https://img.shields.io/npm/v/marmot-cli.svg?style=flat-square" alt="NPM version"></a>
+<a href="https://travis-ci.org/macacajs/marmot-cli"><img src="https://img.shields.io/travis/macacajs/marmot-cli.svg?style=flat-square" alt="build status"></a>
+<a href="https://coveralls.io/r/macacajs/marmot-cli?branch=master"><img src="https://img.shields.io/coveralls/macacajs/marmot-cli.svg?style=flat-square" alt="Test coverage"></a>
+<a href="http://nodejs.org/download/"><img src="https://img.shields.io/badge/node.js-%3E=_8-green.svg?style=flat-square" alt="node version"></a>
+<a href="https://npmjs.org/package/marmot-cli"><img src="https://img.shields.io/npm/dm/marmot-cli.svg?style=flat-square" alt="npm download"></a></p>
+<blockquote>
+<p>command-line interface for Marmot</p>
+</blockquote>
+<h2>Installment</h2><pre class="prettyprint source lang-bash"><code>$ npm i marmot-cli -g</code></pre><h2>Usage</h2><h3>report</h3><pre class="prettyprint source lang-bash"><code>$ marmot report -c ./marmot.config.js</code></pre><h2>Configuration</h2><pre class="prettyprint source lang-javascript"><code>module.exports = {
+  files: [
+    `build/Release-iphonesimulator/${pkg.name}.app`
+  ],
+  packages: [
+    {
+      version,
+      path: `${pkg.name}.app`,
+    }
+  ],
+  testInfo: {
+  },
+  extraInfo: {
+  }
+};</code></pre><p>User helper methods to resolve the iOS and Android platforms.</p>
+<pre class="prettyprint source lang-javascript"><code>const helper = require('marmot-cli').helper;
+const {
+  iosUtils,
+  androidUtils,
+  webUtils,
+} = helper;
+
+// frequently methods
+
+iosUtils
+
+androidUtils.parseGradle
+
+webUtils.summarizedCoverage
+
+helper.getDepsPkgVersion
+
+helper.isExistedFile
+
+helper.isExistedDir
+
+helper.moment
+
+helper.mkdir
+
+helper.rimraf
+
+helper.shelljs
+
+helper.detectPort</code></pre><h3>Integration Samples</h3><ul>
+<li><a href="//github.com/app-bootstrap/ios-app-bootstrap">ios-app-bootstrap</a></li>
+<li><a href="//github.com/app-bootstrap/android-app-bootstrap">android-app-bootstrap</a></li>
+<li><a href="//github.com/app-bootstrap/awesome-practice-projects">awesome-practice-projects</a></li>
+<li><a href="//github.com/app-bootstrap/web-app-bootstrap">web-app-bootstrap</a></li>
+</ul>
+<p>Example for ios-app-bootstrap:</p>
+<pre class="prettyprint source lang-bash"><code>$ MARMOT_SERVER_URL=http://127.0.0.1:9900 ci.sh</code></pre><h2>Environment Variable</h2><table>
+<thead>
+<tr>
+<th>name</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MARMOT_SERVER_URL</td>
+<td>server url for Marmot server</td>
+</tr>
+</tbody>
+</table>
+<!-- GITCONTRIBUTOR_START -->
+<h2>Contributors</h2><table>
+<thead>
+<tr>
+<th style="text-align:center"><a href="https://github.com/xudafeng"><img src="https://avatars1.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub></a><br/></th>
+<th style="text-align:center"><a href="https://github.com/zhangyuheng"><img src="https://avatars1.githubusercontent.com/u/2139038?v=4" width="100px;"/><br/><sub><b>zhangyuheng</b></sub></a><br/></th>
+<th style="text-align:center"><a href="https://github.com/YvonneZhang"><img src="https://avatars2.githubusercontent.com/u/4408102?v=4" width="100px;"/><br/><sub><b>YvonneZhang</b></sub></a><br/></th>
+<th style="text-align:center"><a href="https://github.com/SamuelZhaoY"><img src="https://avatars0.githubusercontent.com/u/8198256?v=4" width="100px;"/><br/><sub><b>SamuelZhaoY</b></sub></a><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p>This project follows the git-contributor <a href="https://github.com/xudafeng/git-contributor">spec</a>, auto upated at <code>Tue Jun 19 2018 16:57:33 GMT+0700</code>.</p>
+<!-- GITCONTRIBUTOR_END -->
+<h2>License</h2><p>The MIT License (MIT)</p></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Aug 16 2018 21:38:21 GMT+0800 (CST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
