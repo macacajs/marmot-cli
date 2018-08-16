@@ -34,6 +34,8 @@
     "eslint-config-antife": "^1.0.2",
     "git-contributor": "^1.0.8",
     "intelli-espower-loader": "^1.0.1",
+    "jsdoc": "^3.5.5",
+    "minami": "^1.1.1",
     "mocha": "^5.2.0",
     "nyc": "^12.0.2",
     "power-assert": "^1.6.0",
@@ -42,6 +44,8 @@
   },
   "scripts": {
     "ci": "npm run lint && npm run test",
+    "doc": "npm run clean && jsdoc -c ./jsdoc.json",
+    "clean": "rm -rf ./docs",
     "test": "nyc --reporter=lcov --reporter=text mocha",
     "test-debug": "nyc --reporter=lcov --reporter=text mocha; open coverage/lcov-report/index.html",
     "lint": "eslint . --fix",
