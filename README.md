@@ -65,27 +65,8 @@ const {
 
 // frequently methods
 
-iosUtils
+https://macacajs.github.io/marmot-cli/
 
-androidUtils.parseGradle
-
-webUtils.summarizedCoverage
-
-helper.getDepsPkgVersion
-
-helper.isExistedFile
-
-helper.isExistedDir
-
-helper.moment
-
-helper.mkdir
-
-helper.rimraf
-
-helper.shelljs
-
-helper.detectPort
 ```
 
 ### Integration Samples
