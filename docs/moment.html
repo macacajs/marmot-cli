@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Home - Documentation</title>
+    <title>moment - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,121 +29,140 @@
 
 <div id="main">
     
+    <h1 class="page-title">moment</h1>
+    
 
     
 
 
 
+
+<section>
+
+<header>
+    
+        <h2>
+        moment
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="moment"><span class="type-signature"></span>new moment<span class="signature">()</span><span class="type-signature"></span></h4>
+
     
 
 
 
+<div class="description">
+    Parse, validate, manipulate, and display dates and times
+</div>
 
 
 
 
 
+<dl class="details">
 
     
 
+    
 
-    <section class="readme">
-        <article><h1>marmot-cli</h1><p><a href="https://npmjs.org/package/marmot-cli"><img src="https://img.shields.io/npm/v/marmot-cli.svg?style=flat-square" alt="NPM version"></a>
-<a href="https://travis-ci.org/macacajs/marmot-cli"><img src="https://img.shields.io/travis/macacajs/marmot-cli.svg?style=flat-square" alt="build status"></a>
-<a href="https://coveralls.io/r/macacajs/marmot-cli?branch=master"><img src="https://img.shields.io/coveralls/macacajs/marmot-cli.svg?style=flat-square" alt="Test coverage"></a>
-<a href="http://nodejs.org/download/"><img src="https://img.shields.io/badge/node.js-%3E=_8-green.svg?style=flat-square" alt="node version"></a>
-<a href="https://npmjs.org/package/marmot-cli"><img src="https://img.shields.io/npm/dm/marmot-cli.svg?style=flat-square" alt="npm download"></a></p>
-<blockquote>
-<p>command-line interface for Marmot</p>
-</blockquote>
-<h2>Installment</h2><pre class="prettyprint source lang-bash"><code>$ npm i marmot-cli -g</code></pre><h2>Usage</h2><h3>report</h3><pre class="prettyprint source lang-bash"><code>$ marmot report -c ./marmot.config.js</code></pre><h2>Configuration</h2><pre class="prettyprint source lang-javascript"><code>module.exports = {
-  files: [
-    `build/Release-iphonesimulator/${pkg.name}.app`
-  ],
-  packages: [
-    {
-      version,
-      path: `${pkg.name}.app`,
-    }
-  ],
-  testInfo: {
-  },
-  extraInfo: {
-  }
-};</code></pre><p>User helper methods to resolve the iOS and Android platforms.</p>
-<pre class="prettyprint source lang-javascript"><code>const helper = require('marmot-cli').helper;
-const {
-  iosUtils,
-  androidUtils,
-  webUtils,
-} = helper;
+    
 
-// frequently methods
+    
 
-iosUtils
+    
 
-androidUtils.parseGradle
+    
 
-webUtils.summarizedCoverage
+    
 
-helper.getDepsPkgVersion
+    
 
-helper.isExistedFile
+    
 
-helper.isExistedDir
+    
 
-helper.moment
+    
 
-helper.mkdir
+    
 
-helper.rimraf
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="helper.js.html">helper.js</a>, <a href="helper.js.html#line53">line 53</a>
+    </li></ul></dd>
+    
 
-helper.shelljs
+    
 
-helper.detectPort</code></pre><h3>Integration Samples</h3><ul>
-<li><a href="//github.com/app-bootstrap/ios-app-bootstrap">ios-app-bootstrap</a></li>
-<li><a href="//github.com/app-bootstrap/android-app-bootstrap">android-app-bootstrap</a></li>
-<li><a href="//github.com/app-bootstrap/awesome-practice-projects">awesome-practice-projects</a></li>
-<li><a href="//github.com/app-bootstrap/web-app-bootstrap">web-app-bootstrap</a></li>
-</ul>
-<p>Example for ios-app-bootstrap:</p>
-<pre class="prettyprint source lang-bash"><code>$ MARMOT_SERVER_URL=http://127.0.0.1:9900 ci.sh</code></pre><h2>Environment Variable</h2><table>
-<thead>
-<tr>
-<th>name</th>
-<th>description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MARMOT_SERVER_URL</td>
-<td>server url for Marmot server</td>
-</tr>
-</tbody>
-</table>
-<!-- GITCONTRIBUTOR_START -->
-<h2>Contributors</h2><table>
-<thead>
-<tr>
-<th style="text-align:center"><a href="https://github.com/xudafeng"><img src="https://avatars1.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub></a><br/></th>
-<th style="text-align:center"><a href="https://github.com/zhangyuheng"><img src="https://avatars1.githubusercontent.com/u/2139038?v=4" width="100px;"/><br/><sub><b>zhangyuheng</b></sub></a><br/></th>
-<th style="text-align:center"><a href="https://github.com/YvonneZhang"><img src="https://avatars2.githubusercontent.com/u/4408102?v=4" width="100px;"/><br/><sub><b>YvonneZhang</b></sub></a><br/></th>
-<th style="text-align:center"><a href="https://github.com/SamuelZhaoY"><img src="https://avatars0.githubusercontent.com/u/8198256?v=4" width="100px;"/><br/><sub><b>SamuelZhaoY</b></sub></a><br/></th>
-<th style="text-align:center"><a href="https://github.com/ltianqi"><img src="https://avatars3.githubusercontent.com/u/1818483?v=4" width="100px;"/><br/><sub><b>ltianqi</b></sub></a><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"></td>
-</tr>
-</tbody>
-</table>
-<p>This project follows the git-contributor <a href="https://github.com/xudafeng/git-contributor">spec</a>, auto upated at <code>Thu Aug 16 2018 21:59:35 GMT+0800</code>.</p>
-<!-- GITCONTRIBUTOR_END -->
-<h2>License</h2><p>The MIT License (MIT)</p></article>
-    </section>
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://momentjs.com/">https://momentjs.com/</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
 
 
 
