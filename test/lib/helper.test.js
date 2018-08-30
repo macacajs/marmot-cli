@@ -69,11 +69,6 @@ describe('lib/helper', () => {
     process.env.MARMOT_WEB = true;
     assert(helper.getPlatformType() === 'web');
     delete process.env.MARMOT_WEB;
-
-    process.env.ANDROID_HOME = true;
-    assert(helper.getPlatformType() === 'android');
-    delete process.env.ANDROID_HOME;
-
     process.env = _env;
   });
 
