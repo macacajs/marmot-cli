@@ -2,16 +2,16 @@
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
+[![Test coverage][codecov-image]][codecov-url]
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
 [npm-image]: https://img.shields.io/npm/v/marmot-cli.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/marmot-cli
-[travis-image]: https://img.shields.io/travis/macacajs/marmot-cli.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/macacajs/marmot-cli.svg?style=flat-square&logo=travis
 [travis-url]: https://travis-ci.org/macacajs/marmot-cli
-[coveralls-image]: https://img.shields.io/coveralls/macacajs/marmot-cli.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/macacajs/marmot-cli?branch=master
+[codecov-image]: https://img.shields.io/codecov/c/github/macacajs/marmot-cli.svg?style=flat-square
+[codecov-url]: https://codecov.io/gh/macacajs/marmot-cli
 [node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/marmot-cli.svg?style=flat-square
