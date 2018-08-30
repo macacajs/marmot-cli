@@ -22,7 +22,7 @@
     "globby": "^8.0.1",
     "gradle-to-js": "^1.1.0",
     "ios-utils": "^1.0.7",
-    "last-commit-log": "^1.0.5",
+    "last-commit-log": "^1.0.12",
     "macaca-istanbul": "^1.0.5",
     "microtemplate": "^1.0.2",
     "urllib": "^2.28.1",

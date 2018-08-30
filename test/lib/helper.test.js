@@ -69,16 +69,11 @@ describe('lib/helper', () => {
     process.env.MARMOT_WEB = true;
     assert(helper.getPlatformType() === 'web');
     delete process.env.MARMOT_WEB;
-
-    process.env.ANDROID_HOME = true;
-    assert(helper.getPlatformType() === 'android');
-    delete process.env.ANDROID_HOME;
-
     process.env = _env;
   });
 
   it('should get package version', () => {
-    assert(helper.getDepsPkgVersion('last-commit-log').match(/^1\.\d\.\d$/));
+    assert(helper.getDepsPkgVersion('last-commit-log').match(/^\d+.\d+\.\d+$/));
     assert(helper.getDepsPkgVersion('no-deps-last-commit-log') === undefined);
   });
 
