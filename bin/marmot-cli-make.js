@@ -3,8 +3,9 @@
 'use strict';
 
 const _ = require('../lib/helper');
-const platformType = _.getPlatformType();
 const childProcess = require('child_process');
+
+const platformType = _.getPlatformType();
 
 let cmd = '';
 const args = [];
