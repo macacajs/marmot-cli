@@ -20,8 +20,11 @@ describe('lib/enviroment', () => {
     process.env.BUILD_NUMBER = '141';
 
     const envData = enviroment();
-    assert(envData.jenkins.JOB_NAME === 'task_force');
-    assert(envData.jenkins.BUILD_NUMBER === '141');
+    console.log(envData.ci)
+
+    assert(envData.ci.JOB_NAME === 'task_force');
+    assert(envData.ci.BUILD_NUMBER === '141');
+    assert(envData.ci.RUNNER_TYPE === 'JENKINS');
     assert(envData.platform);
     assert(envData.os.nodeVersion);
     assert(envData.os.platform);
