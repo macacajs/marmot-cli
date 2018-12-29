@@ -2,10 +2,10 @@
 
 const assert = require('assert');
 
-const marmotCli = require('..');
+const reliableCli = require('..');
 
 describe('test', () => {
   it('should be ok', () => {
-    assert.ok(marmotCli);
+    assert.ok(reliableCli);
   });
 });

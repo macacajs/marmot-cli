@@ -48,15 +48,15 @@
 
 
     <section class="readme">
-        <article><h1>marmot-cli</h1><p><a href="https://npmjs.org/package/marmot-cli"><img src="https://img.shields.io/npm/v/marmot-cli.svg?style=flat-square" alt="NPM version"></a>
-<a href="https://travis-ci.org/macacajs/marmot-cli"><img src="https://img.shields.io/travis/macacajs/marmot-cli.svg?style=flat-square" alt="build status"></a>
-<a href="https://coveralls.io/r/macacajs/marmot-cli?branch=master"><img src="https://img.shields.io/coveralls/macacajs/marmot-cli.svg?style=flat-square" alt="Test coverage"></a>
+        <article><h1>reliable-cli</h1><p><a href="https://npmjs.org/package/reliable-cli"><img src="https://img.shields.io/npm/v/reliable-cli.svg?style=flat-square" alt="NPM version"></a>
+<a href="https://travis-ci.org/macacajs/reliable-cli"><img src="https://img.shields.io/travis/macacajs/reliable-cli.svg?style=flat-square" alt="build status"></a>
+<a href="https://coveralls.io/r/macacajs/reliable-cli?branch=master"><img src="https://img.shields.io/coveralls/macacajs/reliable-cli.svg?style=flat-square" alt="Test coverage"></a>
 <a href="http://nodejs.org/download/"><img src="https://img.shields.io/badge/node.js-%3E=_8-green.svg?style=flat-square" alt="node version"></a>
-<a href="https://npmjs.org/package/marmot-cli"><img src="https://img.shields.io/npm/dm/marmot-cli.svg?style=flat-square" alt="npm download"></a></p>
+<a href="https://npmjs.org/package/reliable-cli"><img src="https://img.shields.io/npm/dm/reliable-cli.svg?style=flat-square" alt="npm download"></a></p>
 <blockquote>
 <p>command-line interface for Marmot</p>
 </blockquote>
-<h2>Installment</h2><pre class="prettyprint source lang-bash"><code>$ npm i marmot-cli -g</code></pre><h2>Usage</h2><h3>report</h3><pre class="prettyprint source lang-bash"><code>$ marmot report -c ./marmot.config.js</code></pre><h2>Configuration</h2><pre class="prettyprint source lang-javascript"><code>module.exports = {
+<h2>Installment</h2><pre class="prettyprint source lang-bash"><code>$ npm i reliable-cli -g</code></pre><h2>Usage</h2><h3>report</h3><pre class="prettyprint source lang-bash"><code>$ reliable report -c ./reliable.config.js</code></pre><h2>Configuration</h2><pre class="prettyprint source lang-javascript"><code>module.exports = {
   files: [
     `build/Release-iphonesimulator/${pkg.name}.app`
   ],
@@ -71,7 +71,7 @@
   extraInfo: {
   }
 };</code></pre><p>User helper methods to resolve the iOS and Android platforms.</p>
-<pre class="prettyprint source lang-javascript"><code>const helper = require('marmot-cli').helper;
+<pre class="prettyprint source lang-javascript"><code>const helper = require('reliable-cli').helper;
 const {
   iosUtils,
   androidUtils,

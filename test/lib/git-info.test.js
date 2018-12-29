@@ -8,8 +8,8 @@ describe('lib/git-info', () => {
   it('should get git info', () => {
     return getGitInfo()
       .then(data => {
-        assert(data.gitRemote.endsWith('macacajs/marmot-cli.git'));
-        assert(data.gitUrl.endsWith('://github.com/macacajs/marmot-cli'));
+        assert(data.gitRemote.endsWith('macacajs/reliable-cli.git'));
+        assert(data.gitUrl.endsWith('://github.com/macacajs/reliable-cli'));
         assert(data.shortHash);
         assert(data.hash);
         assert(data.subject);

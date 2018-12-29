@@ -1,4 +1,4 @@
-# marmot-cli
+# reliable-cli
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -6,23 +6,23 @@
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/marmot-cli.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/marmot-cli
-[travis-image]: https://img.shields.io/travis/macacajs/marmot-cli.svg?style=flat-square&logo=travis
-[travis-url]: https://travis-ci.org/macacajs/marmot-cli
-[codecov-image]: https://img.shields.io/codecov/c/github/macacajs/marmot-cli.svg?style=flat-square
-[codecov-url]: https://codecov.io/gh/macacajs/marmot-cli
+[npm-image]: https://img.shields.io/npm/v/reliable-cli.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/reliable-cli
+[travis-image]: https://img.shields.io/travis/macacajs/reliable-cli.svg?style=flat-square&logo=travis
+[travis-url]: https://travis-ci.org/macacajs/reliable-cli
+[codecov-image]: https://img.shields.io/codecov/c/github/macacajs/reliable-cli.svg?style=flat-square
+[codecov-url]: https://codecov.io/gh/macacajs/reliable-cli
 [node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
-[download-image]: https://img.shields.io/npm/dm/marmot-cli.svg?style=flat-square
-[download-url]: https://npmjs.org/package/marmot-cli
+[download-image]: https://img.shields.io/npm/dm/reliable-cli.svg?style=flat-square
+[download-url]: https://npmjs.org/package/reliable-cli
 
 > command-line interface for Marmot
 
 ## Installment
 
 ```bash
-$ npm i marmot-cli -g
+$ npm i reliable-cli -g
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ $ npm i marmot-cli -g
 ### report
 
 ```bash
-$ marmot report -c ./marmot.config.js
+$ reliable report -c ./reliable.config.js
 ```
 
 ## Configuration
@@ -56,7 +56,7 @@ module.exports = {
 User helper methods to resolve the iOS and Android platforms.
 
 ```javascript
-const helper = require('marmot-cli').helper;
+const helper = require('reliable-cli').helper;
 const {
   iosUtils,
   androidUtils,
@@ -65,7 +65,7 @@ const {
 
 // frequently methods
 
-https://macacajs.github.io/marmot-cli/
+https://macacajs.github.io/reliable-cli/
 
 ```
 

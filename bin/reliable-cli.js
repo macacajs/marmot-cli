@@ -101,7 +101,7 @@ if (!cmd) {
   return program.help();
 }
 
-// for cmd which belongs to development process, all navigate to marmot-cli-make.js
+// for cmd which belongs to development process, all navigate to reliable-cli-make.js
 if (buildCmds.includes(cmd)) {
   program.rawArgs.splice(3, 0, cmd);
   cmd = 'make';

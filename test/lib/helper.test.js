@@ -7,9 +7,9 @@ const urllib = require('urllib');
 const helper = require('../../lib/helper');
 
 describe('lib/helper', () => {
-  it('should get marmot home', () => {
+  it('should get reliable home', () => {
     const res = helper.getMarmotHome();
-    assert(res.endsWith('/marmot_home'));
+    assert(res.endsWith('/reliable_home'));
   });
 
   it('should get static server root', () => {
@@ -18,7 +18,7 @@ describe('lib/helper', () => {
     process.env.HOME = '/home/docker';
     process.env.NOT_IN_DOCKER = true;
     let res = helper.getStaticServerRoot();
-    assert(res === '/home/docker/marmot_home/static');
+    assert(res === '/home/docker/reliable_home/static');
 
     delete process.env.NOT_IN_DOCKER;
     process.env.MARMOT_WEB = true;
@@ -29,7 +29,7 @@ describe('lib/helper', () => {
     delete process.env.MARMOT_WEB;
     process.env.MARMOT_IOS = true;
     res = helper.getStaticServerRoot();
-    assert(res === '/home/docker/marmot_home/static');
+    assert(res === '/home/docker/reliable_home/static');
 
     process.env = _env;
   });
