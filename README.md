@@ -17,7 +17,7 @@
 [download-image]: https://img.shields.io/npm/dm/reliable-cli.svg?style=flat-square
 [download-url]: https://npmjs.org/package/reliable-cli
 
-> command-line interface for Marmot
+> command-line interface for Reliable
 
 ## Installment
 
@@ -79,14 +79,14 @@ https://macacajs.github.io/reliable-cli/
 Example for ios-app-bootstrap:
 
 ```bash
-$ MARMOT_SERVER_URL=http://127.0.0.1:9900 ci.sh
+$ RELIABLE_SERVER_URL=http://127.0.0.1:9900 ci.sh
 ```
 
 ## Environment Variable
 
 | name              | description                  |
 | ----------------- | ---------------------------- |
-| MARMOT_SERVER_URL | server url for Marmot server |
+| RELIABLE_SERVER_URL | server url for Reliable server |
 
 <!-- GITCONTRIBUTOR_START -->
 

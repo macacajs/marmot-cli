@@ -8,7 +8,7 @@ const helper = require('../../lib/helper');
 
 describe('lib/helper', () => {
   it('should get reliable home', () => {
-    const res = helper.getMarmotHome();
+    const res = helper.getReliableHome();
     assert(res.endsWith('/reliable_home'));
   });
 
@@ -21,13 +21,13 @@ describe('lib/helper', () => {
     assert(res === '/home/docker/reliable_home/static');
 
     delete process.env.NOT_IN_DOCKER;
-    process.env.MARMOT_WEB = true;
+    process.env.RELIABLE_WEB = true;
     res = helper.getStaticServerRoot();
     assert(res === '/static');
 
     delete process.env.NOT_IN_DOCKER;
-    delete process.env.MARMOT_WEB;
-    process.env.MARMOT_IOS = true;
+    delete process.env.RELIABLE_WEB;
+    process.env.RELIABLE_IOS = true;
     res = helper.getStaticServerRoot();
     assert(res === '/home/docker/reliable_home/static');
 
@@ -58,17 +58,17 @@ describe('lib/helper', () => {
   it('should get platform type', () => {
     const _env = process.env;
 
-    process.env.MARMOT_IOS = true;
+    process.env.RELIABLE_IOS = true;
     assert(helper.getPlatformType() === 'ios');
-    delete process.env.MARMOT_IOS;
+    delete process.env.RELIABLE_IOS;
 
-    process.env.MARMOT_ANDROID = true;
+    process.env.RELIABLE_ANDROID = true;
     assert(helper.getPlatformType() === 'android');
-    delete process.env.MARMOT_ANDROID;
+    delete process.env.RELIABLE_ANDROID;
 
-    process.env.MARMOT_WEB = true;
+    process.env.RELIABLE_WEB = true;
     assert(helper.getPlatformType() === 'web');
-    delete process.env.MARMOT_WEB;
+    delete process.env.RELIABLE_WEB;
     process.env = _env;
   });
 
